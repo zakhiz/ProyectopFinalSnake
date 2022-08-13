@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    font-family: 'Righteous', cursive;
+} 
+ body{
+    background: #000;
+ }
+ #board, .boardInfo{
+    max-width: 500px;
+ }
+     
+ #board{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+ }
+ #start, .boardInfo{
+    font-size: 25px;
+ }
+ #gameOver{
+    display: none;
+    color: #Fff;
+ }
+
+ .boardInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #fff;
+}
+
+#start{
+    background: #f35a69;
+    border: none;
+    color: #fff;
+}
+#scoreBoard{
+    display: inline-flex;
+    color: #Fff;
+}
+.square{
+    aspect-ratio: 1;
+}
+.emptySquare{
+    background: #a7c957;
+    box-shadow: 0 2px 11px #a7c957;
+}
+
+.snakeSquare{
+    background: #2d6a4f;
+    box-shadow: 0 2px 20px #2d6a4f,0 2px 20px #2d6a4f;
+    
+}
+.foodSquare{
+    background: #e71d36;
+    border-radius: 6px;
+    border: 2px solid #e71d36;
+    box-shadow: 0 2px 16px #e71d36 ;
+}
+
